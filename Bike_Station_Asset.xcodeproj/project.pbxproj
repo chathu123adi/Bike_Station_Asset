@@ -11,6 +11,7 @@
 		B7716B3B28F808420036C454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B3A28F808420036C454 /* ContentView.swift */; };
 		B7716B3D28F808450036C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7716B3C28F808450036C454 /* Assets.xcassets */; };
 		B7716B4028F808450036C454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7716B3F28F808450036C454 /* Preview Assets.xcassets */; };
+		B7716B4828F8088A0036C454 /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B4728F8088A0036C454 /* BikeStation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B7716B3A28F808420036C454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7716B3C28F808450036C454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7716B3F28F808450036C454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7716B4728F8088A0036C454 /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		B7716B3728F808420036C454 /* Bike_Station_Asset */ = {
 			isa = PBXGroup;
 			children = (
+				B7716B4628F8085C0036C454 /* Model */,
 				B7716B3828F808420036C454 /* Bike_Station_AssetApp.swift */,
 				B7716B3A28F808420036C454 /* ContentView.swift */,
 				B7716B3C28F808450036C454 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				B7716B3F28F808450036C454 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7716B4628F8085C0036C454 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7716B4728F8088A0036C454 /* BikeStation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				B7716B3B28F808420036C454 /* ContentView.swift in Sources */,
 				B7716B3928F808420036C454 /* Bike_Station_AssetApp.swift in Sources */,
+				B7716B4828F8088A0036C454 /* BikeStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
