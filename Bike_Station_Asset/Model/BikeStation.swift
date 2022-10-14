@@ -7,6 +7,10 @@
 
 import Foundation
 
-class BikeStation {
-    
+struct BikeStation: Identifiable, Decodable {
+    var id: Int // id
+    var stationName: String // label
+    var totalBikeRack: Int // bike_racks
+    var freeRacks: Int // free_racks
+    var lastUpdate: String // updated
 }
