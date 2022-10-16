@@ -2,7 +2,7 @@
 //  Bike_Station_AssetApp.swift
 //  Bike_Station_Asset
 //
-//  Created by chathurnaga Adikari on 2022-10-13.
+//  Created by Chathuranga Adikari on 2022-10-13.
 //
 
 import SwiftUI

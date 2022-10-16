@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  Bike_Station_Asset
 //
-//  Created by vinoj randika on 2022-10-16.
+//  Created by Chathuranga Adikari on 2022-10-16.
 //
 
 import Foundation
