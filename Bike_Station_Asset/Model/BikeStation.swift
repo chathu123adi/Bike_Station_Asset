@@ -12,5 +12,7 @@ struct BikeStation: Identifiable, Decodable {
     var stationName: String // label
     var totalBikeRack: Int // bike_racks
     var freeRacks: Int // free_racks
+    var availableBike: Int // bikes
     var lastUpdate: String // updated
+    let longitute , latitude: Double
 }

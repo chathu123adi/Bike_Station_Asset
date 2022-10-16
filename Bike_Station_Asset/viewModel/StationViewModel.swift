@@ -51,7 +51,7 @@ class StationViewModel: ObservableObject {
                         let longitude = cordinate?[0] as! Double
                         let latitude = cordinate?[1] as! Double
                         
-                        self.stationsData.append(BikeStation(id: id, stationName: stationName, totalBikeRack: availablePlaces, freeRacks: freeRack, lastUpdate: updated))
+                        self.stationsData.append(BikeStation(id: id, stationName: stationName, totalBikeRack: availablePlaces, freeRacks: freeRack, availableBike: availableBike, lastUpdate: updated, longitute: longitude, latitude: latitude))
                     }
                     
                 }catch{

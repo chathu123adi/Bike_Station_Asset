@@ -13,6 +13,8 @@
 		B7716B4028F808450036C454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7716B3F28F808450036C454 /* Preview Assets.xcassets */; };
 		B7716B4828F8088A0036C454 /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B4728F8088A0036C454 /* BikeStation.swift */; };
 		B7716B4B28F82F6C0036C454 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B4A28F82F6C0036C454 /* StationViewModel.swift */; };
+		B7716B4F28FBC68C0036C454 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B4E28FBC68B0036C454 /* DetailView.swift */; };
+		B7716B5128FBE3120036C454 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7716B5028FBE3120036C454 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B7716B4728F8088A0036C454 /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 		B7716B4A28F82F6C0036C454 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		B7716B4C28F9E1A90036C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7716B4E28FBC68B0036C454 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B7716B5028FBE3120036C454 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				B7716B4928F82F2A0036C454 /* viewModel */,
 				B7716B4628F8085C0036C454 /* Model */,
 				B7716B3828F808420036C454 /* Bike_Station_AssetApp.swift */,
+				B7716B4E28FBC68B0036C454 /* DetailView.swift */,
 				B7716B3A28F808420036C454 /* ContentView.swift */,
 				B7716B3C28F808450036C454 /* Assets.xcassets */,
 				B7716B3E28F808450036C454 /* Preview Content */,
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B7716B4728F8088A0036C454 /* BikeStation.swift */,
+				B7716B5028FBE3120036C454 /* LocationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 			files = (
 				B7716B3B28F808420036C454 /* ContentView.swift in Sources */,
 				B7716B3928F808420036C454 /* Bike_Station_AssetApp.swift in Sources */,
+				B7716B5128FBE3120036C454 /* LocationManager.swift in Sources */,
 				B7716B4828F8088A0036C454 /* BikeStation.swift in Sources */,
+				B7716B4F28FBC68C0036C454 /* DetailView.swift in Sources */,
 				B7716B4B28F82F6C0036C454 /* StationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

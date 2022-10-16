@@ -16,10 +16,10 @@ struct ContentView: View {
                 Color.white //.edgesIgnoringSafeArea(.all) //.ignoresSafeArea()
                 ScrollView {
                     ForEach(viewModel.stationsData) { item in // start loop
-                        NavigationLink (destination: Text("Secondary View")){
+                        NavigationLink (destination: DetailView(stationObject: item) ){
                             VStack(spacing: 30) {
                                 VStack(alignment: .leading) {
-                                    Text("047 Ofia Dabaia").font(.system(size: 25, weight: .bold, design: .default))
+                                    Text("\(item.id) \(item.stationName)").font(.system(size: 25, weight: .bold, design: .default))
     //                                    .frame(alignment: .leading)
                                     
                                     Text("600m - Bike Station").font(.system(size: 15, weight: .light, design: .default))
@@ -33,13 +33,13 @@ struct ContentView: View {
                                     VStack {
                                         Image("bike").scaledToFit()
                                         Text("Available Bikes").font(.system(size: 15, weight: .light, design: .default))
-                                        Text("7").font(.system(size: 45, weight: .bold, design: .default))
+                                        Text("\(item.availableBike)").font(.system(size: 45, weight: .bold, design: .default))
                                             .foregroundColor(Color.green)
                                     }
                                     VStack {
                                         Image("lock").scaledToFit()
                                         Text("Available Places").font(.system(size: 15, weight: .light, design: .default))
-                                        Text("21").font(.system(size: 45, weight: .bold, design: .default))
+                                        Text("\(item.totalBikeRack)").font(.system(size: 45, weight: .bold, design: .default))
                                             .foregroundColor(Color.black)
                                     }
                                 }
