@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+import MapKit
 
 class StationViewModel: ObservableObject {
     var apiUrl = "http://www.poznan.pl/mim/plan/map_service.html?mtype=pub_transport&co=stacje_rowerowe"
     
     @Published var stationsData = [BikeStation]()
+    @ObservedObject private var locationManger =  LocationManager()
     
     func fetchStationData () {
         
@@ -64,4 +67,19 @@ class StationViewModel: ObservableObject {
         }
         
     }
+    
+    
+    func findDistance (longitute: Double, Latitute: Double) -> Int {
+        let currentCordinate = self.locationManger.location != nil ? self.locationManger.location!.coordinate: CLLocationCoordinate2D()
+        
+        let loc1 = CLLocation(latitude: currentCordinate.latitude, longitude: currentCordinate.longitude)
+        
+        let loc2 = CLLocation(latitude: longitute, longitude: Latitute)
+        
+        let distance = loc1.distance(from: loc2)
+        let roundeddistance = Int(distance.rounded())
+        
+        return roundeddistance
+    }
+    
 }

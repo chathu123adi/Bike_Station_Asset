@@ -22,7 +22,7 @@ struct ContentView: View {
                                     Text("\(item.id) \(item.stationName)").font(.system(size: 25, weight: .bold, design: .default))
     //                                    .frame(alignment: .leading)
                                     
-                                    Text("600m - Bike Station").font(.system(size: 15, weight: .light, design: .default))
+                                    Text("\(viewModel.findDistance(longitute: item.longitute, Latitute: item.latitude)) - Bike Station").font(.system(size: 15, weight: .light, design: .default))
                                 }.frame(
                                     minWidth: 0,
                                     maxWidth: .infinity,
